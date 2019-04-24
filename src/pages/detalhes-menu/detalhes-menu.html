@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detalhes Menu</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+          <img [src]="menu.menu_icone">
+      </ion-avatar>
+      <h2>{{menu.menu_descricao}}</h2>
+      <p>Codigo: {{menu.menu_id}}</p>
+    </ion-item>
+
+    <ion-item>
+      Link
+      <ion-note item-end>
+        {{menu.menu_link}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item>
+      Restrição
+      <ion-note item-end>
+        {{menu.menu_restricao}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item>
+      Perfil
+      <ion-note item-end>
+        {{menu.menu_perfil_empresa}}
+      </ion-note>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

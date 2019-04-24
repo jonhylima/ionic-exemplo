@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Novo Menu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="logForm()">
+
+    <ion-item>
+      <ion-label>Descrição</ion-label>
+      <ion-input type="text" [(ngModel)]="dados.menu_descricao" name="title"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Imagem</ion-label>
+      <ion-input type="text" [(ngModel)]="dados.menu_icone" name="title"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Link</ion-label>
+      <ion-input type="text" [(ngModel)]="dados.menu_link" name="description"></ion-input>
+    </ion-item>
+
+    <button ion-button type="submit" block>Salvar</button>
+
+  </form>
+</ion-content>
